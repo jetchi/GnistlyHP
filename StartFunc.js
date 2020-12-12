@@ -12,15 +12,21 @@ function submitIdea() {
 
     // creating idea in the database
     $.ajax({
-        url: "https://localhost:44390/api/Ideas", // added s to http! Needs to match the URI of the API when running in the browser
+        url: "https://localhost:44390/api/Ideas", // added s to http! Needs to match the URI of the API
         type: 'POST',
         data: JSON.stringify(data),
         contentType: "application/json; charset=utf-8",
         success: function () {
             alert("ide er gemt");
+            resetForm();
         },
         error: function () {
             alert(" fejl ");
         }
     });
+}
+
+/* Will reset the input form after a new idea was stored */
+function resetForm() {
+    document.getElementById("addIdea").reset();
 }

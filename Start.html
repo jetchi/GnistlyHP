@@ -8,7 +8,8 @@
     <!-- adds icon in title bar. Icon made by Vectors Market from www.flaticon.com-->
     <link rel = "icon" href="star.png" type = "image/x-icon">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- "får JS-fil med AJAX til at virke"-->
+    <!-- "helps to get JS-file with AJAX to work"-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- include Bootstrap from a CDN (Content delivery Network), not hosted on my computer -->
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
@@ -21,9 +22,10 @@
 
 </head>
 
-<body background="sparks-AuthorFree-PhotosFromPixabay-ikarus+sunscreen.jpg" alt="alternatetext" > <!-- alt="alternatetext" will be read by e.g. a screen reader, used by a disabled person -->
-    <form onsubmit="submitIdea()" id="addIdea">
+<body background="sparks-AuthorFree-PhotosFromPixabay-ikarus+sunscreen.jpg" alt="Background image of flying sparks caused by an angle grinder."> <!-- alt="alternatetext" will be read by e.g. a screen reader, used by a disabled person -->
+    <form id="addIdea"> <!-- input elements are grouped in a parent element of type "form"-->
         <fieldset>
+            <!-- Row 1: Titel & menu icon-->
             <div class="row top-buffer">
                 <div class="col-md-11">
                     <h1>HAR DU EN IDÉ?</h1>
@@ -38,12 +40,12 @@
                     </a>
                 </div>
             </div>
-
+            <!-- Row 2: input Titel & input User-->
             <div class="row top-buffer">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="ideaTitle">Titel</label> <!-- the "for" attribute of the "label" must be equal to the "id" of the corresponding "input" element to bind them together.-->
-                        <input type="text" class="form-control" id="ideaTitle" aria-describedby="titelHelp" placeholder="tilføj titel på din idé"> <!-- "name="ideaTitle" The name attributed is needed, otherwise the value of the input field will not be sent. or not with bootstrap? -->
+                        <input type="text" class="form-control" id="ideaTitle" aria-describedby="titelHelp" placeholder="tilføj titel på din idé">
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -53,7 +55,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Row 3: input Description & input Impact slider-->
             <div class="row small-buffer">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -66,11 +68,11 @@
                         <legend>Estimeret værdi</legend>
                         <label for="estimatedImpactRange">1 - 5</label>
                         <input type="range" class="custom-range" id="estimatedImpactRange" value="3" max="5" min="1" oninput="this.nextElementSibling.value = this.value">
-                        <output></output> <!-- will show the chosen effort value -->
+                        <output></output> <!-- will show the chosen impact value -->
                     </fieldset>
                 </div>
             </div>
-
+            <!-- Row 4: input Hashtag & input Effort slider-->
             <div class="row small-buffer">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -87,7 +89,7 @@
                     </fieldset>
                 </div>
             </div>
-
+            <!-- Row 5: input File-->
             <div class="row small-buffer">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -104,7 +106,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Row 6: submit button & reset button-->
             <div class="row small-buffer">
                 <div class="col-md-6">
                     <button type="button" onclick="submitIdea()" class="btn btn-primary btn-lg btn-block">Gem ny idé</button>
