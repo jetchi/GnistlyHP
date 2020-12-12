@@ -2,30 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> makes website responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes website responsive-->
     <title>Gnistly</title>
 
     <!-- adds icon in title bar. Icon made by Vectors Market from www.flaticon.com-->
-    <link rel = "icon" href="star.png"
-          type = "image/x-icon">
+    <link rel = "icon" href="star.png" type = "image/x-icon">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- "for at faa JS til at virke" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- "får JS-fil med AJAX til at virke"-->
 
-    <!-- include bootstrap from a CDN (Content delivery Network), not hosted on my computer -->
-    <!-- latest compiled and minified css-->
+    <!-- include Bootstrap from a CDN (Content delivery Network), not hosted on my computer -->
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"></script>
 
-
-
     <!-- own additional stylesheet -->
     <link rel="stylesheet" href="MainStyles.css">
 
-    <!-- imported font from google -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat"
-          rel="stylesheet"> <!-- not in use anymore, since bootstrap added-->
 </head>
 
 <body background="sparks-AuthorFree-PhotosFromPixabay-ikarus+sunscreen.jpg" alt="alternatetext" > <!-- alt="alternatetext" will be read by e.g. a screen reader, used by a disabled person -->
@@ -49,14 +42,14 @@
             <div class="row top-buffer">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="ideaTitle">Titel</label>
+                        <label for="ideaTitle">Titel</label> <!-- the "for" attribute of the "label" must be equal to the "id" of the corresponding "input" element to bind them together.-->
                         <input type="text" class="form-control" id="ideaTitle" aria-describedby="titelHelp" placeholder="tilføj titel på din idé"> <!-- "name="ideaTitle" The name attributed is needed, otherwise the value of the input field will not be sent. or not with bootstrap? -->
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-2">
                     <div class="form-group">
                         <label for="ideaAuthor">Medarbejder Nummer</label>
-                        <input type="text" class="form-control" id="ideaAuthor" aria-describedby="employeeNrHelp" placeholder="tilføj dit medarbejder nummer"> <!-- "name="ideaTitle" The name attributed is needed, otherwise the value of the input field will not be sent. or not with bootstrap? -->
+                        <input type="text" class="form-control" id="ideaAuthor" aria-describedby="employeeNrHelp" placeholder="tilføj dit medarbejder nummer">
                     </div>
                 </div>
             </div>
@@ -71,8 +64,9 @@
                 <div class="col-md-6">
                     <fieldset class="form-group">
                         <legend>Estimeret værdi</legend>
-                        <label for="estimatedImpactRange">1 til 5</label>
-                        <input type="range" class="custom-range" id="estimatedImpactRange">
+                        <label for="estimatedImpactRange">1 - 5</label>
+                        <input type="range" class="custom-range" id="estimatedImpactRange" value="3" max="5" min="1" oninput="this.nextElementSibling.value = this.value">
+                        <output></output> <!-- will show the chosen effort value -->
                     </fieldset>
                 </div>
             </div>
@@ -81,14 +75,15 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="ideaHashtag">Stikord</label>
-                        <input type="text" class="form-control" id="ideaHashtag" aria-describedby="hashtagHelp" placeholder="tilføj stikord">
+                        <input type="text" class="form-control" id="ideaHashtag" aria-describedby="hashtagHelp" placeholder="for future implementation" disabled> <!-- "disabled" = can't take input-->
                     </div>
                 </div>
                 <div class="col-md-6">
                     <fieldset class="form-group">
                         <legend>Estimeret omfang</legend>
-                        <label for="estimatedEffortRange">1 til 5</label>
-                        <input type="range" class="custom-range" id="estimatedEffortRange">
+                        <label for="estimatedEffortRange">1 - 5</label>
+                        <input type="range" class="custom-range" id="estimatedEffortRange" value="3" max="5" min="1" oninput="this.nextElementSibling.value = this.value">
+                        <output></output> <!-- will show the chosen effort value -->
                     </fieldset>
                 </div>
             </div>
@@ -99,8 +94,8 @@
                         <label for="inputFile">Filer</label>
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputFile">
-                                <label class="custom-file-label" for="inputFile">vælg fil</label>
+                                <input type="file" class="custom-file-input" id="inputFile" disabled> <!-- "disabled" = can't take input-->
+                                <label class="custom-file-label" for="inputFile">for future implementation</label>
                             </div>
                             <div class="input-group-append">
                                 <span class="input-group-text">Upload</span>
