@@ -10,10 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe8c0fd0-721d-4def-8bf3-d4a303a248f9" name="Default Changelist" comment="input can now be taken from the textboxes and sliders in the browser + added further functionality to sliders">
+    <list default="true" id="fe8c0fd0-721d-4def-8bf3-d4a303a248f9" name="Default Changelist" comment="input-elements will be resetted to placeholders after an idea got submitted + added comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Start.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/StartFunc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browse.html" beforeDir="false" afterPath="$PROJECT_DIR$/Browse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality.js" beforeDir="false" afterPath="$PROJECT_DIR$/BrowseFunc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Overview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,9 @@
       <workItem from="1607554248454" duration="1769000" />
       <workItem from="1607588549026" duration="18598000" />
       <workItem from="1607628688228" duration="4495000" />
-      <workItem from="1607673132667" duration="38178000" />
+      <workItem from="1607673132667" duration="45790000" />
+      <workItem from="1608151827185" duration="1288000" />
+      <workItem from="1608197857158" duration="1410000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607555150337</created>
@@ -106,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607797150831</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="input-elements will be resetted to placeholders after an idea got submitted + added comments">
+      <created>1607810209318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607810209319</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +138,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="added javascript with ajax to connect to API" />
     <MESSAGE value="input can now be taken from the textboxes and sliders in the browser + added further functionality to sliders" />
-    <option name="LAST_COMMIT_MESSAGE" value="input can now be taken from the textboxes and sliders in the browser + added further functionality to sliders" />
+    <MESSAGE value="input-elements will be resetted to placeholders after an idea got submitted + added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="input-elements will be resetted to placeholders after an idea got submitted + added comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1607599878712">
@@ -160,10 +171,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1607554763489" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607797184685">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607810281381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1607797184685" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1607810281381" />
     <state x="47" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607808239771">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
